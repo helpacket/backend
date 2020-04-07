@@ -1,0 +1,14 @@
+# First installation things:
+Django==2.2.2
+gunicorn==19.6.0
+psycopg2==2.7.3.2
+
+# ipython:
+ipython==7.9.0
+
+# GraphQL:
+graphene-django==2.6.0
+
+# TODO delete in production
+# CORS headers
+django-cors-headers==3.2.0

@@ -12,7 +12,7 @@ services:
     build: .
     container_name: dg01
     restart: always
-    command: bash -c "python manage.py collectstatic --no-input && python manage.py makemigrations && python manage.py migrate && gunicorn myproject.wsgi -b 0.0.0.0:8000"
+    command: bash -c "python manage.py collectstatic --no-input && python manage.py makemigrations && python manage.py migrate && gunicorn myproject.wsgi -b 0.0.0.0:8000 --reload"
     depends_on:
       - 'db'
     volumes:

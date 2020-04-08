@@ -12,4 +12,4 @@ container-shell:
 	docker exec -it dg01 bash
 
 test:
-	docker exec -it dg01 bash -c "python manage.py test"
+	docker exec dg01 bash -c "python manage.py test"

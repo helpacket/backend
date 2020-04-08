@@ -29,7 +29,7 @@ services:
     volumes:
       - ./src:/src
       - ./config/nginx:/etc/nginx/conf.d
-      - static:/static
+      - vol_static:/static
     depends_on:
       - 'web'
 

@@ -4,8 +4,10 @@ services:
     image: postgres:latest
     restart: always
     container_name: ps01
+    environment:
+      - POSTGRES_PASSWORD=contraseña
     volumes:
-      - ./vol_postgres:/var/lib/postgresql/data
+      - vol_postgres:/var/lib/postgresql/data
   web:
     build: .
     container_name: dg01
@@ -30,3 +32,7 @@ services:
       - /static:/static
     depends_on:
       - 'web'
+
+volumes:
+  vol_postgres:
+    driver: local

@@ -17,7 +17,7 @@ services:
       - 'db'
     volumes:
       - ./src:/src
-      - /static:/static
+      - vol_static/:/static
     expose:
       - "8000"
   nginx:

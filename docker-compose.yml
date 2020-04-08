@@ -29,10 +29,12 @@ services:
     volumes:
       - ./src:/src
       - ./config/nginx:/etc/nginx/conf.d
-      - /static:/static
+      - static:/static
     depends_on:
       - 'web'
 
 volumes:
   vol_postgres:
+    driver: local
+  vol_static:
     driver: local

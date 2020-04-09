@@ -1,15 +1,13 @@
 from graphene import (
     Schema,
-    ObjectType,
 )
 
 from .types import (
-    Query as QuerySchema,
+    Query,
+    Mutation,
 )
 
-
-class Query(QuerySchema, ObjectType):
-    pass
-
-
-schema = Schema(query=Query)
+schema = Schema(
+    query=Query,
+    mutation=Mutation,
+)

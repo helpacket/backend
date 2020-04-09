@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'corsheaders',  # TODO delete in production
     'core',
     'parties',
+    'products',
+    'transactions'
 ]
 
 MIDDLEWARE = [

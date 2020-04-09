@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
+    'corsheaders',  # TODO delete in production
     'core',
     'parties',
-    'graphene_django',
-    'graphene_schema',
-    'corsheaders',  # TODO delete in production
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +86,7 @@ DATABASES = {
         'USER': 'postgres',
         'HOST': 'db',
         'PORT': 5432,
-        'PASSWORD': 'contraseña',
+        'PASSWORD': os.getenv("POSTGRES_PASSWORD"),
     }
 }
 
@@ -135,7 +135,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/static'
 
 GRAPHENE = {
-    'SCHEMA': 'graphene_schema.schema.schema'
+    'SCHEMA': 'api.schema.schema'
 }
 
 # TODO delete in production

@@ -5,12 +5,14 @@ services:
     restart: always
     container_name: ps01
     environment:
-      - POSTGRES_PASSWORD=contraseña
+      - POSTGRES_PASSWORD
     volumes:
       - vol_postgres:/var/lib/postgresql/data
   web:
     build: .
     container_name: dg01
+    environment:
+      - POSTGRES_PASSWORD
     restart: always
     command: bash -c "python manage.py collectstatic --no-input && python manage.py makemigrations && python manage.py migrate && gunicorn myproject.wsgi -b 0.0.0.0:8000 --reload"
     depends_on:

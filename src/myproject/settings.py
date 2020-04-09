@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'parties',
     'graphene_django',
     'graphene_schema',
     'corsheaders',  # TODO delete in production
@@ -89,6 +90,10 @@ DATABASES = {
     }
 }
 
+# User model
+# https://docs.djangoproject.com/en/3.0/topics/auth/customizing/#substituting-a-custom-user-model
+
+AUTH_USER_MODEL = 'parties.Person'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

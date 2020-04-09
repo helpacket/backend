@@ -1,0 +1,23 @@
+name: Test CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Start containers
+      run: |
+        make up
+    - name: Run Tests
+      run: |
+        make test
+    - name: Stop containers
+      run: |
+        make test

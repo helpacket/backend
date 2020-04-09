@@ -17,11 +17,15 @@ from core.api import (
     BandNode,
     ConcertNode,
 )
+from parties.api import (
+    PersonNode,
+)
 
 
 class Query(ObjectType):
     concerts = DjangoFilterConnectionField(ConcertNode)
     bands = DjangoFilterConnectionField(BandNode)
+    people = DjangoFilterConnectionField(PersonNode)
 
 
 class Mutation(ObjectType):

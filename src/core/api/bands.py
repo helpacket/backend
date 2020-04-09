@@ -21,7 +21,7 @@ from graphql_relay import (
     from_global_id,
 )
 
-from core.models import (
+from ..models import (
     Band,
 )
 
@@ -65,6 +65,9 @@ class BandMutation(ClientIDMutation):
             result = Band.objects.get(pk=identifier)
             result.delete()
             return cls(ok=True)
+
+        user = info.context.user
+        kwargs["owner"] = user
 
         result, _ = Band.objects.update_or_create(defaults=kwargs, pk=identifier)
         return cls(result=result, ok=True)

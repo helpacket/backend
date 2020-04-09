@@ -11,20 +11,21 @@ from graphene_django.types import (
 )
 
 from ..models import (
-    Concert,
+    Person,
 )
 
 logger = logging.getLogger(__name__)
 
 
-class ConcertNode(DjangoObjectType):
+class PersonNode(DjangoObjectType):
     class Meta:
-        model = Concert
-        filter_fields = ['id', 'creation_datetime']
+        model = Person
+        fields = ("username", "email", "first_name", "last_name")
+        filter_fields = ['username', 'email']
         interfaces = (Node,)
 
     @classmethod
     @login_required
     def get_queryset(cls, queryset, info):
         user = info.context.user
-        return queryset.filter(creator=user)
+        return queryset.filter(username=user.username)

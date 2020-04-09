@@ -1,7 +1,17 @@
+from datetime import (
+    datetime,
+)
+
 import graphene
-from graphene_django.types import DjangoObjectType
-from core.models import Concert, Bar, Band
-from datetime import datetime
+from graphene_django.types import (
+    DjangoObjectType,
+)
+
+from core.models import (
+    Concert,
+    Bar,
+    Band,
+)
 
 
 class ConcertType(DjangoObjectType):
@@ -28,12 +38,16 @@ class Query(object):
     all_concerts = graphene.List(ConcertType)
 
     def resolve_all_concerts(self, info, **kwargs):
-        return Concert.objects.filter(start_datetime__date__gte=datetime.now().date()).order_by('start_datetime')
+        query = Concert.objects.filter(
+            start_datetime__date__gte=datetime.now().date()
+        )
+        query = query.order_by('start_datetime')
+        return query
 
-    def resolve_concert(self, info, **kwargs):
-        id = kwargs.get('id')
+    def resolve_concert(self, id, **kwargs):
+        identifier = id
 
-        if id is not None:
-            return Concert.objects.get(pk=id)
+        if identifier is not None:
+            return Concert.objects.get(pk=identifier)
 
         return None

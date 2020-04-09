@@ -22,4 +22,7 @@ migrate:
 	docker exec -it dg01 bash -c "python manage.py makemigrations && python manage.py migrate"
 
 logs:
-	docker logs -f dg01
+	docker logs -f --tail 200 dg01 
+
+restart:
+	docker restart dg01

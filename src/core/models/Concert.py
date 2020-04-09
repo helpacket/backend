@@ -8,6 +8,7 @@ class Concert(models.Model):
 
     bar = models.ForeignKey('core.Bar', related_name='concerts', null=True, on_delete=models.SET_NULL)
     band = models.ForeignKey('core.Band', related_name='concerts', null=True, on_delete=models.SET_NULL)
+    creator = models.ForeignKey('parties.Person', related_name="concerts", null=True, on_delete=models.SET_NULL)
 
     creation_datetime = models.DateTimeField(auto_now_add=True)
     last_modification_datetime = models.DateTimeField(auto_now=True)

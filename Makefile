@@ -17,3 +17,9 @@ shell:
 
 test:
 	docker exec dg01 bash -c "python manage.py test"
+
+migrate:
+	docker exec -it dg01 bash -c "python manage.py makemigrations && python manage.py migrate"
+
+logs:
+	docker logs -f dg01

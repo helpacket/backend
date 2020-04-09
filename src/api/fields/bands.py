@@ -54,13 +54,6 @@ class BandMutation(ClientIDMutation):
     ok = Boolean()
 
     @classmethod
-    def get_queryset(cls, queryset, info):
-        user = info.context.user
-        if not user.is_authenticated:
-            return queryset.none()
-        return queryset
-
-    @classmethod
     @login_required
     def mutate_and_get_payload(cls, root, info, **kwargs):
 

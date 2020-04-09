@@ -1,6 +1,6 @@
 import logging
 
-from django.contrib.auth.decorators import (
+from graphql_jwt.decorators import (
     login_required,
 )
 from graphene.relay import (
@@ -20,10 +20,11 @@ logger = logging.getLogger(__name__)
 class ConcertNode(DjangoObjectType):
     class Meta:
         model = Concert
-        filter_fields = ['id']
+        filter_fields = ['id', 'creation_datetime']
         interfaces = (Node,)
 
     @classmethod
     @login_required
     def get_queryset(cls, queryset, info):
-        return queryset
+        user = info.context.user
+        return queryset.filter(creator=user)

@@ -4,7 +4,8 @@ from graphene import (
     Field,
     String,
     ID,
-    Boolean)
+    Boolean,
+)
 from graphene.relay import (
     Node,
     ClientIDMutation,
@@ -13,6 +14,9 @@ from graphene_django.types import (
     DjangoObjectType,
 )
 
+from graphql_jwt.decorators import (
+    login_required,
+)
 from graphql_relay import (
     from_global_id,
 )
@@ -30,6 +34,11 @@ class BandNode(DjangoObjectType):
         filter_fields = ['id', 'name', 'creation_datetime']
         interfaces = (Node,)
 
+    @classmethod
+    @login_required
+    def get_queryset(cls, queryset, info):
+        return queryset
+
 
 class BandMutation(ClientIDMutation):
     class Input:
@@ -45,6 +54,14 @@ class BandMutation(ClientIDMutation):
     ok = Boolean()
 
     @classmethod
+    def get_queryset(cls, queryset, info):
+        user = info.context.user
+        if not user.is_authenticated:
+            return queryset.none()
+        return queryset
+
+    @classmethod
+    @login_required
     def mutate_and_get_payload(cls, root, info, **kwargs):
 
         identifier = kwargs.pop("id", None)

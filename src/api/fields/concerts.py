@@ -1,5 +1,8 @@
 import logging
 
+from django.contrib.auth.decorators import (
+    login_required,
+)
 from graphene.relay import (
     Node,
 )
@@ -19,3 +22,8 @@ class ConcertNode(DjangoObjectType):
         model = Concert
         filter_fields = ['id']
         interfaces = (Node,)
+
+    @classmethod
+    @login_required
+    def get_queryset(cls, queryset, info):
+        return queryset

@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'corsheaders',  # TODO delete in production
     'core',
     'parties',
-    'api',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +129,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/static'
 
 GRAPHENE = {
-    'SCHEMA': 'api.schema.schema',
+    'SCHEMA': 'myproject.schema.schema',
     'MIDDLEWARE': [
         'graphql_jwt.middleware.JSONWebTokenMiddleware',
     ],

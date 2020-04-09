@@ -11,7 +11,8 @@ from graphql_jwt import (
 from graphene_django.filter import (
     DjangoFilterConnectionField,
 )
-from .fields import (
+
+from core.api import (
     BandMutation,
     BandNode,
     ConcertNode,

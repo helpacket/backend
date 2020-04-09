@@ -8,6 +8,7 @@ ipython==7.9.0
 
 # GraphQL:
 graphene-django==2.6.0
+django-filter==2.2.0
 
 # TODO delete in production
 # CORS headers

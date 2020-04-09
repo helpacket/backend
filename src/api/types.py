@@ -1,53 +1,34 @@
-from datetime import (
-    datetime,
+from graphene import relay
+from graphene_django.filter import (
+    DjangoFilterConnectionField,
 )
-
-import graphene
 from graphene_django.types import (
     DjangoObjectType,
 )
 
 from core.models import (
     Concert,
-    Bar,
     Band,
 )
 
 
-class ConcertType(DjangoObjectType):
+class ConcertNode(DjangoObjectType):
     class Meta:
         model = Concert
+        filter_fields = ['id']
+        interfaces = (relay.Node,)
 
 
-class BarType(DjangoObjectType):
-    class Meta:
-        model = Bar
-
-
-class BandType(DjangoObjectType):
+class BandNode(DjangoObjectType):
     class Meta:
         model = Band
+        filter_fields = ['id']
+        interfaces = (relay.Node,)
 
 
 class Query(object):
-    concert = graphene.Field(
-        # ConcertType, id=graphene.Int(), band=graphene.String(), description=graphene.String(),
-        ConcertType, id=graphene.Int()
-    )
+    concert = relay.Node.Field(ConcertNode)
+    all_concerts = DjangoFilterConnectionField(ConcertNode)
 
-    all_concerts = graphene.List(ConcertType)
-
-    def resolve_all_concerts(self, info, **kwargs):
-        query = Concert.objects.filter(
-            start_datetime__date__gte=datetime.now().date()
-        )
-        query = query.order_by('start_datetime')
-        return query
-
-    def resolve_concert(self, id, **kwargs):
-        identifier = id
-
-        if identifier is not None:
-            return Concert.objects.get(pk=identifier)
-
-        return None
+    band = relay.Node.Field(BandNode)
+    all_bands = DjangoFilterConnectionField(BandNode)

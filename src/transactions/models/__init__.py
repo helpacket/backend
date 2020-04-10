@@ -1,3 +1,10 @@
-from .Request import Request
-from .Supply import Supply
-from .Transaction import Transaction
+"""Definition of models."""
+
+from .operations import (
+    Operation,
+    Request,
+    Supply,
+)
+from .transaction import (
+    Transaction,
+)

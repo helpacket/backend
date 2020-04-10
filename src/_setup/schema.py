@@ -1,3 +1,5 @@
+"""Definition of API endpoints."""
+
 from graphene import (
     Schema,
     ObjectType,
@@ -17,7 +19,7 @@ from core.api import (
     BandNode,
     ConcertNode,
 )
-from parties.api import (
+from users.api import (
     PersonNode,
 )
 from transactions.api import (
@@ -30,6 +32,8 @@ from products.api import (
 
 
 class Query(ObjectType):
+    """Accessible GraphQL queries."""
+
     concerts = DjangoFilterConnectionField(ConcertNode)
     bands = DjangoFilterConnectionField(BandNode)
     people = DjangoFilterConnectionField(PersonNode)
@@ -39,6 +43,8 @@ class Query(ObjectType):
 
 
 class Mutation(ObjectType):
+    """Accessible GraphQL mutations."""
+
     token_auth = ObtainJSONWebToken.Field()
     verify_token = Verify.Field()
     refresh_token = Refresh.Field()

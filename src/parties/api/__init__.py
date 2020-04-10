@@ -1,3 +1,0 @@
-from .person import (
-    PersonNode,
-)

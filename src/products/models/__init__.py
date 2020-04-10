@@ -1,1 +1,5 @@
-from .Product import Product
+"""Definition of models."""
+
+from .product import (
+    Product,
+)

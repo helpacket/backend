@@ -14,10 +14,12 @@ services:
     environment:
       - POSTGRES_PASSWORD
     restart: always
-    command: bash -c "python manage.py collectstatic --no-input && python manage.py migrate && gunicorn _setup.wsgi -b 0.0.0.0:8000 --reload"
+    command: ./entry_point.sh
+    # command: tail -f /dev/null
     depends_on:
       - 'db'
     volumes:
+      - ./config/web/entry_point.sh:/src/entry_point.sh
       - ./src:/src
       - vol_static/:/static
     expose:

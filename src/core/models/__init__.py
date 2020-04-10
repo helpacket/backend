@@ -1,3 +1,3 @@
-from .Band import Band
-from .Bar import Bar
-from .Concert import Concert
+from .band import Band
+from .bar import Bar
+from .concert import Concert

@@ -3,9 +3,9 @@
 from .abc import (
     Role,
 )
-from .request import (
-    RequestRole,
+from .client import (
+    Client,
 )
-from .supply import (
-    SupplyRole,
+from .supplier import (
+    Supplier,
 )

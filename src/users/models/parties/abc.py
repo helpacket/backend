@@ -11,4 +11,11 @@ logger = logging.getLogger(__name__)
 
 class Party(Model):
     """Party model."""
-    pass
+
+    @property
+    def is_supplier(self) -> bool:
+        return hasattr(self, "supplier")
+
+    @property
+    def is_client(self) -> bool:
+        return hasattr(self, "client")

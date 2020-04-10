@@ -1,1 +1,3 @@
-from .ProductNode import ProductNode
+from .product import (
+    ProductNode,
+)

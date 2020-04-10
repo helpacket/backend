@@ -4,10 +4,10 @@ from django.contrib.admin import (
 )
 
 from ...models import (
-    SupplyRole,
+    Supplier,
 )
 
 
-@register(SupplyRole)
-class SupplyRoleAdmin(ModelAdmin):
+@register(Supplier)
+class SupplierAdmin(ModelAdmin):
     list_display = ('party',)

@@ -4,10 +4,10 @@ from django.contrib.admin import (
 )
 
 from ...models import (
-    RequestRole,
+    Client,
 )
 
 
-@register(RequestRole)
-class RequestRoleAdmin(ModelAdmin):
+@register(Client)
+class ClientAdmin(ModelAdmin):
     list_display = ('party',)

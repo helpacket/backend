@@ -2,6 +2,9 @@
 
 import logging
 
+from graphene import (
+    Boolean,
+)
 from graphql_jwt.decorators import (
     login_required,
 )
@@ -22,11 +25,14 @@ logger = logging.getLogger(__name__)
 class PersonNode(DjangoObjectType):
     """PersonNode endpoint."""
 
+    is_client = Boolean()
+    is_supplier = Boolean()
+
     class Meta:
         """Meta class."""
         model = Person
         fields = ("username", "email", "first_name", "last_name")
-        filter_fields = ['username', 'email']
+        filter_fields = ('username', 'email',)
         interfaces = (Node,)
 
     @classmethod

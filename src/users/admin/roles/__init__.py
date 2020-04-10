@@ -1,6 +1,6 @@
 from .request import (
-    RequestRoleAdmin,
+    ClientAdmin,
 )
 from .supply import (
-    SupplyRoleAdmin,
+    SupplierAdmin,
 )

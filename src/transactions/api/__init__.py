@@ -1,2 +1,6 @@
-from .RequestNode import RequestNode
-from .SupplyNode import SupplyNode
+from .request import (
+    RequestNode,
+)
+from .supply import (
+    SupplyNode,
+)

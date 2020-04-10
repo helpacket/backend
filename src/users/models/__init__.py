@@ -6,6 +6,6 @@ from .parties import (
 )
 from .roles import (
     Role,
-    RequestRole,
-    SupplyRole,
+    Client,
+    Supplier,
 )

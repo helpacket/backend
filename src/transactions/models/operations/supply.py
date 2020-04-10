@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 class Supply(Operation):
     """Supply model."""
 
-    supplier = ForeignKey('users.SupplyRole', related_name='supplies', on_delete=CASCADE)
+    supplier = ForeignKey('users.Supplier', related_name='supplies', on_delete=CASCADE)
 
     product = ForeignKey('products.Product', related_name='supplies', on_delete=CASCADE)
 

@@ -321,4 +321,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+./src/entry_point.sh
 # End of https://www.gitignore.io/api/linux,macos,django,python,windows,pycharm+all

@@ -1,6 +1,6 @@
 from .request import (
-    RequestNode,
+    ClientAdmin,
 )
 from .supply import (
-    SupplyNode,
+    SupplierAdmin,
 )

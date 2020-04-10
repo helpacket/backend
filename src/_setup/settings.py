@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'corsheaders',  # TODO delete in production
     'core',
-    'parties',
+    'users',
     'products',
     'transactions'
 ]
@@ -91,7 +91,7 @@ DATABASES = {
 # User model
 # https://docs.djangoproject.com/en/3.0/topics/auth/customizing/#substituting-a-custom-user-model
 
-AUTH_USER_MODEL = 'parties.Person'
+AUTH_USER_MODEL = 'users.Person'
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

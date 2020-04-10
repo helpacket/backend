@@ -20,12 +20,22 @@ from core.api import (
 from parties.api import (
     PersonNode,
 )
+from transactions.api import (
+    SupplyNode,
+    RequestNode,
+)
+from products.api import (
+    ProductNode,
+)
 
 
 class Query(ObjectType):
     concerts = DjangoFilterConnectionField(ConcertNode)
     bands = DjangoFilterConnectionField(BandNode)
     people = DjangoFilterConnectionField(PersonNode)
+    supplies = DjangoFilterConnectionField(SupplyNode)
+    requests = DjangoFilterConnectionField(RequestNode)
+    products = DjangoFilterConnectionField(ProductNode)
 
 
 class Mutation(ObjectType):

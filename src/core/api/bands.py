@@ -37,7 +37,8 @@ class BandNode(DjangoObjectType):
     @classmethod
     @login_required
     def get_queryset(cls, queryset, info):
-        return queryset
+        user = info.context.user
+        return queryset.filter(owner=user)
 
 
 class BandMutation(ClientIDMutation):

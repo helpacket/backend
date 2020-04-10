@@ -8,6 +8,6 @@ class Supply(models.Model):
 
     product = models.ForeignKey('products.Product', related_name='supplies', on_delete=models.CASCADE)
     # supplier = models.ForeignKey(Supplier, related_name='supplies', on_delete=models.CASCADE)
-    transaction = models.ForeignKey('transactions.Transaction', related_name='supplies', null=True, on_delete=models.SET_NULL)
+    transaction = models.ForeignKey('transactions.Transaction', related_name='supplies', null=True, blank=True, on_delete=models.SET_NULL)
 
     amount = models.IntegerField()

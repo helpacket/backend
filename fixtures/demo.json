@@ -1,0 +1,2324 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "core",
+      "model": "bar"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "core",
+      "model": "concert"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "core",
+      "model": "band"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "users",
+      "model": "party"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "users",
+      "model": "client"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "users",
+      "model": "supplier"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "users",
+      "model": "person"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "products",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "transactions",
+      "model": "request"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "transactions",
+      "model": "transaction"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "transactions",
+      "model": "supply"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "blyj7wk4f4ynntae5t7mdgaab799fnp8",
+    "fields": {
+      "session_data": "YWQyZWQ5NTBhMzc3YjQxNTgwNTE1MzdhMTk3OGJjOGYzYTFlOWUxMTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIxM2Q2ZWFlYmM2YzgxYmU2MmU5MjRmNjc5ZGQyOTM3M2IwMTIxOGNhIn0=",
+      "expire_date": "2020-04-25T15:29:22.198Z"
+    }
+  },
+  {
+    "model": "users.party",
+    "pk": 1,
+    "fields": {}
+  },
+  {
+    "model": "users.party",
+    "pk": 2,
+    "fields": {}
+  },
+  {
+    "model": "users.party",
+    "pk": 3,
+    "fields": {}
+  },
+  {
+    "model": "users.party",
+    "pk": 4,
+    "fields": {}
+  },
+  {
+    "model": "users.party",
+    "pk": 5,
+    "fields": {}
+  },
+  {
+    "model": "users.client",
+    "pk": 1,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:08:17.286Z",
+      "last_modification_datetime": "2020-04-11T18:08:17.286Z"
+    }
+  },
+  {
+    "model": "users.client",
+    "pk": 3,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:54:02.211Z",
+      "last_modification_datetime": "2020-04-11T16:54:02.211Z"
+    }
+  },
+  {
+    "model": "users.client",
+    "pk": 4,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:53:32.535Z",
+      "last_modification_datetime": "2020-04-11T15:53:32.535Z"
+    }
+  },
+  {
+    "model": "users.client",
+    "pk": 5,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:52:29.484Z",
+      "last_modification_datetime": "2020-04-11T15:52:29.484Z"
+    }
+  },
+  {
+    "model": "users.supplier",
+    "pk": 1,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:08:23.730Z",
+      "last_modification_datetime": "2020-04-11T18:08:23.730Z"
+    }
+  },
+  {
+    "model": "users.supplier",
+    "pk": 2,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:55:08.561Z",
+      "last_modification_datetime": "2020-04-11T15:55:08.561Z"
+    }
+  },
+  {
+    "model": "users.supplier",
+    "pk": 3,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:57:25.308Z",
+      "last_modification_datetime": "2020-04-11T15:57:25.309Z"
+    }
+  },
+  {
+    "model": "users.supplier",
+    "pk": 4,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:57:25.308Z",
+      "last_modification_datetime": "2020-04-11T16:33:53.988Z"
+    }
+  },
+  {
+    "model": "users.supplier",
+    "pk": 5,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:36:54.702Z",
+      "last_modification_datetime": "2020-04-11T16:36:54.702Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:45:16.403Z",
+      "last_modification_datetime": "2020-04-11T15:46:38.091Z",
+      "name": "Mascarilla FFP1"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:45:51.394Z",
+      "last_modification_datetime": "2020-04-11T16:29:04.927Z",
+      "name": "Bata Quirurjica"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:46:00.638Z",
+      "last_modification_datetime": "2020-04-11T15:46:00.638Z",
+      "name": "Gafas Protectoras"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:46:11.833Z",
+      "last_modification_datetime": "2020-04-11T16:28:59.049Z",
+      "name": "Guantes Latex"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:46:45.196Z",
+      "last_modification_datetime": "2020-04-11T15:46:45.196Z",
+      "name": "Mascarilla FFP2"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:54:57.016Z",
+      "last_modification_datetime": "2020-04-11T15:54:57.016Z",
+      "name": "Mascara Protectora (Impresora 3D)"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:18:30.733Z",
+      "last_modification_datetime": "2020-04-11T18:18:30.733Z",
+      "name": "Mascarilla (Sin homologaci\u00f3n)"
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 1,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:55:25.237Z",
+      "last_modification_datetime": "2020-04-11T15:57:14.563Z",
+      "amount": 10,
+      "status": 2,
+      "supplier": 2,
+      "product": 6,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 2,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:56:05.232Z",
+      "last_modification_datetime": "2020-04-11T15:57:08.317Z",
+      "amount": 25,
+      "status": 1,
+      "supplier": 2,
+      "product": 6,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 3,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:56:29.742Z",
+      "last_modification_datetime": "2020-04-11T15:56:29.742Z",
+      "amount": 5,
+      "status": 2,
+      "supplier": 2,
+      "product": 6,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 4,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:56:56.280Z",
+      "last_modification_datetime": "2020-04-11T15:56:56.280Z",
+      "amount": 25,
+      "status": 0,
+      "supplier": 2,
+      "product": 6,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 11,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:48:25.725Z",
+      "last_modification_datetime": "2020-04-11T18:15:16.866Z",
+      "amount": 1000,
+      "status": 2,
+      "supplier": 4,
+      "product": 5,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 12,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:48:41.889Z",
+      "last_modification_datetime": "2020-04-11T16:48:41.889Z",
+      "amount": 1000,
+      "status": 0,
+      "supplier": 4,
+      "product": 6,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 13,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:52:53.556Z",
+      "last_modification_datetime": "2020-04-11T16:52:53.556Z",
+      "amount": 1000,
+      "status": 0,
+      "supplier": 4,
+      "product": 4,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 14,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:08:23.736Z",
+      "last_modification_datetime": "2020-04-11T18:08:23.736Z",
+      "amount": 1000,
+      "status": 0,
+      "supplier": 1,
+      "product": 1,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 15,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:17:13.273Z",
+      "last_modification_datetime": "2020-04-11T18:17:27.763Z",
+      "amount": 10000,
+      "status": 2,
+      "supplier": 4,
+      "product": 4,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 16,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:17:43.270Z",
+      "last_modification_datetime": "2020-04-11T18:17:51.539Z",
+      "amount": 5000,
+      "status": 1,
+      "supplier": 4,
+      "product": 5,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 17,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:18:41.077Z",
+      "last_modification_datetime": "2020-04-11T18:19:12.242Z",
+      "amount": 10,
+      "status": 1,
+      "supplier": 2,
+      "product": 7,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 18,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:18:48.084Z",
+      "last_modification_datetime": "2020-04-11T18:18:48.084Z",
+      "amount": 50,
+      "status": 0,
+      "supplier": 2,
+      "product": 7,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.supply",
+    "pk": 19,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:18:54.903Z",
+      "last_modification_datetime": "2020-04-11T18:24:26.122Z",
+      "amount": 30,
+      "status": 1,
+      "supplier": 2,
+      "product": 7,
+      "transaction": null
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 1,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:52:42.558Z",
+      "last_modification_datetime": "2020-04-11T15:52:42.559Z",
+      "amount": 10000,
+      "status": 0,
+      "client": 5,
+      "product": 5
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 2,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:52:58.697Z",
+      "last_modification_datetime": "2020-04-11T15:52:58.697Z",
+      "amount": 1000,
+      "status": 1,
+      "client": 5,
+      "product": 4
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 3,
+    "fields": {
+      "creation_datetime": "2020-04-11T15:53:20.812Z",
+      "last_modification_datetime": "2020-04-11T15:53:20.813Z",
+      "amount": 5000,
+      "status": 2,
+      "client": 5,
+      "product": 1
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 6,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:54:02.229Z",
+      "last_modification_datetime": "2020-04-11T16:54:02.230Z",
+      "amount": 10,
+      "status": 0,
+      "client": 3,
+      "product": 2
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 7,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:54:48.362Z",
+      "last_modification_datetime": "2020-04-11T16:54:48.362Z",
+      "amount": 100,
+      "status": 0,
+      "client": 3,
+      "product": 3
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 8,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:55:04.686Z",
+      "last_modification_datetime": "2020-04-11T16:55:04.686Z",
+      "amount": 500,
+      "status": 0,
+      "client": 3,
+      "product": 1
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 9,
+    "fields": {
+      "creation_datetime": "2020-04-11T16:56:18.490Z",
+      "last_modification_datetime": "2020-04-11T16:56:18.490Z",
+      "amount": 100,
+      "status": 0,
+      "client": 3,
+      "product": 6
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 11,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:08:17.291Z",
+      "last_modification_datetime": "2020-04-11T18:25:34.391Z",
+      "amount": 100,
+      "status": 2,
+      "client": 1,
+      "product": 3
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 12,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:23:19.713Z",
+      "last_modification_datetime": "2020-04-11T18:24:47.274Z",
+      "amount": 10,
+      "status": 1,
+      "client": 3,
+      "product": 3
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 13,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:23:27.283Z",
+      "last_modification_datetime": "2020-04-11T18:23:27.283Z",
+      "amount": 250,
+      "status": 0,
+      "client": 3,
+      "product": 7
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 14,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:23:41.304Z",
+      "last_modification_datetime": "2020-04-11T18:24:52.474Z",
+      "amount": 25,
+      "status": 2,
+      "client": 3,
+      "product": 6
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 15,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:23:49.703Z",
+      "last_modification_datetime": "2020-04-11T18:24:57.524Z",
+      "amount": 50,
+      "status": 1,
+      "client": 3,
+      "product": 4
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 16,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:23:57.752Z",
+      "last_modification_datetime": "2020-04-11T18:25:01.703Z",
+      "amount": 25,
+      "status": 2,
+      "client": 3,
+      "product": 5
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 17,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:24:07.187Z",
+      "last_modification_datetime": "2020-04-11T18:25:12.758Z",
+      "amount": 5,
+      "status": 1,
+      "client": 3,
+      "product": 3
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 18,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:24:12.886Z",
+      "last_modification_datetime": "2020-04-11T18:25:16.578Z",
+      "amount": 5,
+      "status": 2,
+      "client": 3,
+      "product": 6
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 19,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:26:37.556Z",
+      "last_modification_datetime": "2020-04-11T18:26:37.556Z",
+      "amount": 500,
+      "status": 0,
+      "client": 5,
+      "product": 2
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 20,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:26:46.287Z",
+      "last_modification_datetime": "2020-04-11T18:27:34.075Z",
+      "amount": 1500,
+      "status": 1,
+      "client": 5,
+      "product": 1
+    }
+  },
+  {
+    "model": "transactions.request",
+    "pk": 21,
+    "fields": {
+      "creation_datetime": "2020-04-11T18:27:02.166Z",
+      "last_modification_datetime": "2020-04-11T18:27:20.006Z",
+      "amount": 5000,
+      "status": 2,
+      "client": 5,
+      "product": 4
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add bar",
+      "content_type": 6,
+      "codename": "add_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change bar",
+      "content_type": 6,
+      "codename": "change_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete bar",
+      "content_type": 6,
+      "codename": "delete_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view bar",
+      "content_type": 6,
+      "codename": "view_bar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add concert",
+      "content_type": 7,
+      "codename": "add_concert"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change concert",
+      "content_type": 7,
+      "codename": "change_concert"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete concert",
+      "content_type": 7,
+      "codename": "delete_concert"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view concert",
+      "content_type": 7,
+      "codename": "view_concert"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add band",
+      "content_type": 8,
+      "codename": "add_band"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change band",
+      "content_type": 8,
+      "codename": "change_band"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete band",
+      "content_type": 8,
+      "codename": "delete_band"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view band",
+      "content_type": 8,
+      "codename": "view_band"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add party",
+      "content_type": 9,
+      "codename": "add_party"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change party",
+      "content_type": 9,
+      "codename": "change_party"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete party",
+      "content_type": 9,
+      "codename": "delete_party"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view party",
+      "content_type": 9,
+      "codename": "view_party"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add client",
+      "content_type": 10,
+      "codename": "add_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change client",
+      "content_type": 10,
+      "codename": "change_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete client",
+      "content_type": 10,
+      "codename": "delete_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view client",
+      "content_type": 10,
+      "codename": "view_client"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add supplier",
+      "content_type": 11,
+      "codename": "add_supplier"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change supplier",
+      "content_type": 11,
+      "codename": "change_supplier"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete supplier",
+      "content_type": 11,
+      "codename": "delete_supplier"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view supplier",
+      "content_type": 11,
+      "codename": "view_supplier"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 12,
+      "codename": "add_person"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 12,
+      "codename": "change_person"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 12,
+      "codename": "delete_person"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 12,
+      "codename": "view_person"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add product",
+      "content_type": 13,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change product",
+      "content_type": 13,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete product",
+      "content_type": 13,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view product",
+      "content_type": 13,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add request",
+      "content_type": 14,
+      "codename": "add_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change request",
+      "content_type": 14,
+      "codename": "change_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete request",
+      "content_type": 14,
+      "codename": "delete_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view request",
+      "content_type": 14,
+      "codename": "view_request"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add transaction",
+      "content_type": 15,
+      "codename": "add_transaction"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change transaction",
+      "content_type": 15,
+      "codename": "change_transaction"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete transaction",
+      "content_type": 15,
+      "codename": "delete_transaction"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view transaction",
+      "content_type": 15,
+      "codename": "view_transaction"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add supply",
+      "content_type": 16,
+      "codename": "add_supply"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change supply",
+      "content_type": 16,
+      "codename": "change_supply"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete supply",
+      "content_type": 16,
+      "codename": "delete_supply"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view supply",
+      "content_type": 16,
+      "codename": "view_supply"
+    }
+  },
+  {
+    "model": "users.person",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$mGwGnw3tBbsg$9IDoITk9j3r0oO0YImknxiJaD3wmr0b6IOuTUMN6Y38=",
+      "last_login": "2020-04-11T15:29:22Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Sudo",
+      "last_name": "Root",
+      "email": "admin@localhost",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-04-11T15:26:03Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.person",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$QTsvMvdMSvvk$4tuQA305i//2jinf0G8Lxl38bNpIQ2HOMIswW0GVkNs=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "francisco",
+      "first_name": "Francisco",
+      "last_name": "Gonz\u00e1lez",
+      "email": "francisco@localhost",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-11T15:48:16Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.person",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$AA2d5MLqMV1d$/sgnKzXoCzDp6b62rH2VrTOjQf5P4dT44T4iJGtBGaM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "delafuente",
+      "first_name": "Residencia",
+      "last_name": "de la Fuente",
+      "email": "delafuente@localhost",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-11T15:49:35Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.person",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$xouoARtLKl6i$Q1XwRyGWEdx4/71z6GYuTvCxWkkNyphx+hSv/n8fe/E=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "protecsa",
+      "first_name": "Protec",
+      "last_name": "S.A.",
+      "email": "protecsa@localhost",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-11T15:50:27Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.person",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$N26DGlkOUJZ4$AbGKSDr0Cmo9klDXM0dVCkX9ktbOQkBPIPKEUW6moXk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "rioortega",
+      "first_name": "Hospital",
+      "last_name": "Rio Ortega",
+      "email": "rioortega@localhost",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-04-11T15:51:21Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2020-04-11T15:45:16.405Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Mascarilla",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2020-04-11T15:45:51.401Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "Bata Quir\u00farjica",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2020-04-11T15:46:00.642Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "Gafas Protectoras",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2020-04-11T15:46:11.834Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Guantes L\u00e1tex",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2020-04-11T15:46:38.093Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Mascarilla FFP1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2020-04-11T15:46:45.199Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "Mascarilla FFP2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2020-04-11T15:47:43.800Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2020-04-11T15:48:16.249Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "francisco",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2020-04-11T15:48:31.207Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "francisco",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2020-04-11T15:49:35.229Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "delafuente",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2020-04-11T15:49:56.033Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "delafuente",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2020-04-11T15:50:28.029Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "protecsa",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2020-04-11T15:50:58.556Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "protecsa",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"first_name\", \"last_name\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2020-04-11T15:51:22.085Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "riocarrion",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2020-04-11T15:52:03.931Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "rioortega",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"username\", \"first_name\", \"last_name\", \"email\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2020-04-11T15:52:29.486Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "Client object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2020-04-11T15:52:42.563Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "1",
+      "object_repr": "Request object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2020-04-11T15:52:58.700Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "2",
+      "object_repr": "Request object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2020-04-11T15:53:20.817Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "3",
+      "object_repr": "Request object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2020-04-11T15:53:32.537Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "Client object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2020-04-11T15:53:47.337Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "4",
+      "object_repr": "Request object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2020-04-11T15:54:13.781Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "5",
+      "object_repr": "Request object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2020-04-11T15:54:57.019Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "6",
+      "object_repr": "Mascara Protectora (Impresora 3D)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2020-04-11T15:55:08.562Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Supplier object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2020-04-11T15:55:25.239Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Supply object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2020-04-11T15:56:05.234Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Supply object (2)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2020-04-11T15:56:29.744Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "3",
+      "object_repr": "Supply object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2020-04-11T15:56:56.281Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "4",
+      "object_repr": "Supply object (4)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2020-04-11T15:57:08.319Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "2",
+      "object_repr": "Supply object (2)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2020-04-11T15:57:14.565Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "1",
+      "object_repr": "Supply object (1)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2020-04-11T15:57:25.309Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Supplier object (3)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2020-04-11T15:57:37.659Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "5",
+      "object_repr": "Supply object (5)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2020-04-11T15:57:55.561Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Supply object (6)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2020-04-11T15:58:14.108Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Supply object (7)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2020-04-11T15:58:31.614Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Supply object (8)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2020-04-11T15:58:41.112Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Supply object (9)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2020-04-11T16:02:05.142Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Supply object (6)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2020-04-11T16:28:59.052Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Guantes Latex",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2020-04-11T16:29:04.932Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "Bata Quirurjica",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2020-04-11T16:29:43.474Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Supply object (9)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"amount\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2020-04-11T16:30:05.178Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "10",
+      "object_repr": "Supply object (10)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2020-04-11T16:32:40.845Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Supplier object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2020-04-11T16:32:56.851Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Supplier object (4)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2020-04-11T16:33:53.992Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Supplier object (4)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2020-04-11T16:36:07.376Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Supplier object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2020-04-11T16:36:37.292Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Supplier object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2020-04-11T16:36:49.119Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Supplier object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2020-04-11T16:36:54.703Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Supplier object (5)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"party\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2020-04-11T16:37:13.338Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Supply object (6)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"supplier\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2020-04-11T18:15:16.868Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "11",
+      "object_repr": "Supply object (11)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2020-04-11T18:15:26.642Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "9",
+      "object_repr": "Supply object (9)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2020-04-11T18:16:29.427Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "4",
+      "object_repr": "Request object (4)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2020-04-11T18:16:48.122Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "5",
+      "object_repr": "Request object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2020-04-11T18:16:56.407Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "10",
+      "object_repr": "Request object (10)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2020-04-11T18:17:27.767Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "15",
+      "object_repr": "Supply object (15)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2020-04-11T18:17:51.542Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "16",
+      "object_repr": "Supply object (16)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2020-04-11T18:18:30.735Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "Mascarilla (Sin homologaci\u00f3n)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2020-04-11T18:19:12.244Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "17",
+      "object_repr": "Supply object (17)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2020-04-11T18:19:30.746Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "19",
+      "object_repr": "Supply object (19)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2020-04-11T18:23:06.668Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "10",
+      "object_repr": "Supply object (10)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2020-04-11T18:23:06.672Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "8",
+      "object_repr": "Supply object (8)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2020-04-11T18:23:06.674Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "7",
+      "object_repr": "Supply object (7)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2020-04-11T18:23:06.677Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "5",
+      "object_repr": "Supply object (5)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2020-04-11T18:24:26.129Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "19",
+      "object_repr": "Supply object (19)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2020-04-11T18:24:47.276Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "12",
+      "object_repr": "Request object (12)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2020-04-11T18:24:52.477Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "14",
+      "object_repr": "Request object (14)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2020-04-11T18:24:57.526Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "15",
+      "object_repr": "Request object (15)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2020-04-11T18:24:58.536Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "16",
+      "object_repr": "Request object (16)",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2020-04-11T18:25:01.704Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "16",
+      "object_repr": "Request object (16)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2020-04-11T18:25:12.759Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "17",
+      "object_repr": "Request object (17)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2020-04-11T18:25:16.579Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "18",
+      "object_repr": "Request object (18)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2020-04-11T18:25:34.393Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "11",
+      "object_repr": "Request object (11)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2020-04-11T18:26:27.010Z",
+      "user": 1,
+      "content_type": 16,
+      "object_id": "6",
+      "object_repr": "Supply object (6)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2020-04-11T18:27:20.007Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "21",
+      "object_repr": "Request object (21)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2020-04-11T18:27:34.080Z",
+      "user": 1,
+      "content_type": 14,
+      "object_id": "20",
+      "object_repr": "Request object (20)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"status\"]}}]"
+    }
+  }
+]

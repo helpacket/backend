@@ -9,7 +9,6 @@ from graphql_jwt import (
     Verify,
     Refresh,
 )
-
 from graphene_django.filter import (
     DjangoFilterConnectionField,
 )
@@ -22,10 +21,10 @@ from core.api import (
 from users.api import (
     PersonNode,
 )
-
 from transactions.api import (
     SupplyNode,
     RequestNode,
+    RequestMutation,
 )
 from products.api import (
     ProductNode,
@@ -51,6 +50,7 @@ class Mutation(ObjectType):
     refresh_token = Refresh.Field()
 
     band = BandMutation.Field()
+    request = RequestMutation.Field()
 
 
 schema = Schema(

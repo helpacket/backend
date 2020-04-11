@@ -18,6 +18,7 @@ from core.api import (
     BandNode,
     ConcertNode,
 )
+from transactions.api.supply import SupplyMutation
 from users.api import (
     PersonNode,
 )
@@ -51,6 +52,7 @@ class Mutation(ObjectType):
 
     band = BandMutation.Field()
     request = RequestMutation.Field()
+    supply = SupplyMutation.Field()
 
 
 schema = Schema(

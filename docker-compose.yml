@@ -21,6 +21,7 @@ services:
     volumes:
       - ./config/web/entry_point.sh:/src/entry_point.sh
       - ./src:/src
+      - ./fixtures:/fixtures
       - vol_static/:/static
     expose:
       - "8000"

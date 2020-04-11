@@ -4,4 +4,5 @@ from .request import (
 )
 from .supply import (
     SupplyNode,
+    SupplyMutation,
 )

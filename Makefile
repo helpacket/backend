@@ -26,3 +26,7 @@ logs:
 
 restart:
 	docker restart dg01
+
+
+loaddata-demo:
+	docker exec -it dg01 bash -c "python manage.py loaddata /fixtures/demo.json"

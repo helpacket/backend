@@ -2,6 +2,7 @@
 Django==2.2.2
 gunicorn==19.6.0
 psycopg2==2.7.3.2
+django-polymorphic==2.1.2
 
 # ipython:
 ipython==7.9.0

@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'graphene_django',
     'corsheaders',  # TODO delete in production
-    'core',
     'users',
     'products',
     'transactions'

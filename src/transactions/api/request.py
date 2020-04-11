@@ -32,7 +32,7 @@ class RequestNode(DjangoObjectType):
     @login_required
     def get_queryset(cls, queryset, info):
         user = info.context.user
-        return queryset.filter(requester__party=user)
+        return queryset.filter(client__party=user)
 
 
 class RequestMutation(ClientIDMutation):

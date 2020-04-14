@@ -23,7 +23,9 @@ jobs:
         make down
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v1.0.1
-      path-to-lcov: src/.coverage
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: src/.coverage
     - uses: actions/upload-artifact@v1
       with:
         name: build

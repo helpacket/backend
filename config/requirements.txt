@@ -16,7 +16,8 @@ django-graphql-jwt==0.3.1
 # CORS headers
 django-cors-headers==3.2.0
 
-
+# Tests
 pytest==5.4.1
 pytest-cov==2.8.1
 pytest-django==3.9.0
+coveralls==2.0.0

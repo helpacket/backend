@@ -324,3 +324,4 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/linux,macos,django,python,windows,pycharm+all
 
 src/entry_point.sh
+src/setup.cfg

@@ -12,7 +12,10 @@ services:
     build: .
     container_name: dg01
     environment:
+      - PROJECT_NAME
+      - DJANGO_SETTINGS_MODULE
       - POSTGRES_PASSWORD
+      - ENVIRONMENT
     restart: always
     command: ./entry_point.sh
     # command: tail -f /dev/null
@@ -30,7 +33,7 @@ services:
     container_name: ng01
     restart: always
     ports:
-      - "8000:8000"
+      - "$PORT:8000"
     volumes:
       - ./src:/src
       - ./config/nginx:/etc/nginx/conf.d

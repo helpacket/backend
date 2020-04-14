@@ -9,7 +9,7 @@ services:
     volumes:
       - vol_postgres:/var/lib/postgresql/data
   web:
-    build: .
+    build: ./config/
     container_name: dg01
     environment:
       - PROJECT_NAME
@@ -23,9 +23,12 @@ services:
       - 'db'
     volumes:
       - ./config/web/entry_point.sh:/src/entry_point.sh
+      - vol_static/:/static
+
+      # Development volumes
+      - ./config/web/.coveralls.yml:/src/.coveralls.yml
       - ./src:/src
       - ./fixtures:/fixtures
-      - vol_static/:/static
     expose:
       - "8000"
   nginx:

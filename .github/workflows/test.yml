@@ -23,7 +23,7 @@ jobs:
         make down
     - name: Publish coverage
       run: |
-        cd src && coveralls
+        pip install coveralls && cd src && coveralls
     - uses: actions/upload-artifact@v1
       with:
         name: build

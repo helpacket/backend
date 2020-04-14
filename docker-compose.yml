@@ -9,7 +9,8 @@ services:
     volumes:
       - vol_postgres:/var/lib/postgresql/data
   web:
-    build: ./config/
+    build:
+      context: ./config/web/
     container_name: dg01
     environment:
       - PROJECT_NAME
@@ -17,12 +18,11 @@ services:
       - POSTGRES_PASSWORD
       - ENVIRONMENT
     restart: always
-    command: ./entry_point.sh
+    command: /config/entry_point.sh
     # command: tail -f /dev/null
     depends_on:
       - 'db'
     volumes:
-      - ./config/web/entry_point.sh:/src/entry_point.sh
       - vol_static/:/static
 
       # Development volumes

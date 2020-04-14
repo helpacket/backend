@@ -20,7 +20,7 @@ jobs:
         make test
     - name: Stop containers
       run: |
-        make test
+        make down
     - uses: actions/upload-artifact@v1
       with:
         name: build

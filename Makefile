@@ -1,3 +1,6 @@
+SHELL=/bin/bash
+
+
 up:
 	docker-compose -f docker-compose.yml up --build -d
 
@@ -17,7 +20,7 @@ shell:
 
 test:
 	docker exec dg01 bash -c "pytest --cov=."
-	if [-z "$GITHUB_SHA"]; then \
+	if [ -z "$GITHUB_SHA" ]; then \
   		coveralls; \
 	fi; \
 

@@ -23,10 +23,10 @@ jobs:
         make down
     - name: Publish coverage
       run: |
-        pip3 install -U pip setuptools
-        pip3 install -U coveralls
         cd src
-        coveralls
+        python3 -m pip install -U pip setuptools
+        python3 -m pip install -U coveralls
+        python3 -m coveralls
     - uses: actions/upload-artifact@v1
       with:
         name: build

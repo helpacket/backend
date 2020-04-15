@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
                 ("amount", models.IntegerField()),
                 ("status", models.IntegerField(choices=[(0, "pending"), (1, "assigned"), (2, "sent")], default=0,),),
             ],
-            options={"abstract": False,},
+            options={"abstract": False},
         ),
         migrations.CreateModel(
             name="Transaction",
@@ -51,6 +51,6 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"abstract": False,},
+            options={"abstract": False},
         ),
     ]

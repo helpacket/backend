@@ -5,7 +5,7 @@ restylers:
     command:
       - black
     arguments:
-      - --line-length 120
+      - "--line-length 120"
     include:
       - "**/*.py"
     interpreters:

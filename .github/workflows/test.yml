@@ -23,7 +23,7 @@ jobs:
         make down
     - uses: codecov/codecov-action@v1
       with:
-        file: ./src/.coverage
+        file: ./src/coverage.xml
         fail_ci_if_error: true
     - uses: actions/upload-artifact@v1
       with:

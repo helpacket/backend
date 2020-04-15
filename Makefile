@@ -19,7 +19,7 @@ shell:
 	docker exec -it dg01 bash
 
 test:
-	docker exec dg01 bash -c "pytest --cov=."
+	docker exec dg01 bash -c "pytest --cov=. --cov-report xml --cov-report term"
 
 migrate:
 	docker exec -it dg01 bash -c "python manage.py makemigrations && python manage.py migrate"

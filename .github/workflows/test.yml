@@ -11,21 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Start containers
-      run: |
-        make up
-    - name: Run Tests
-      run: |
-        make test
-    - name: Stop containers
-      run: |
-        make down
-    - uses: codecov/codecov-action@v1
-      with:
-        file: ./src/coverage.xml
-        fail_ci_if_error: true
-    - uses: actions/upload-artifact@v1
-      with:
-        name: build
-        path: .
+      - uses: actions/checkout@v2
+      - name: Start containers
+        run: |
+          make up
+      - name: Run Syntax Checks
+        run: |
+          make syntax
+      - name: Run Tests
+        run: |
+          make test
+      - name: Stop containers
+        run: |
+          make down
+      - uses: codecov/codecov-action@v1
+        with:
+          file: ./src/coverage.xml
+          fail_ci_if_error: true
+      - uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: .

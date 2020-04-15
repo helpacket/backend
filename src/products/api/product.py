@@ -1,3 +1,4 @@
+"""ProductNode endpoint implementation."""
 import logging
 from graphql_jwt.decorators import (
     login_required,
@@ -16,7 +17,9 @@ logger = logging.getLogger(__name__)
 
 
 class ProductNode(DjangoObjectType):
+    """ProductNode endpoint"""
     class Meta:
+        """Meta class."""
         model = Product
         fields = ("id", "name",)
         filter_fields = ()
@@ -25,4 +28,5 @@ class ProductNode(DjangoObjectType):
     @classmethod
     @login_required
     def get_queryset(cls, queryset, info):
+        """Provide the queryset."""
         return queryset

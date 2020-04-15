@@ -1,5 +1,5 @@
 # First installation things:
-Django==2.2.2
+Django==2.2.10
 gunicorn==19.6.0
 psycopg2==2.7.3.2
 

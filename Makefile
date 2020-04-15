@@ -20,9 +20,6 @@ shell:
 
 test:
 	docker exec dg01 bash -c "pytest --cov=."
-	if [ -z "$GITHUB_SHA" ]; then \
-  		coveralls; \
-	fi; \
 
 migrate:
 	docker exec -it dg01 bash -c "python manage.py makemigrations && python manage.py migrate"

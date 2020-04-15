@@ -9,22 +9,16 @@ from graphql_jwt import (
     Verify,
     Refresh,
 )
-from graphene_django.filter import (
-    DjangoFilterConnectionField,
-)
+from graphene_django.filter import DjangoFilterConnectionField
 
-from users.api import (
-    PersonNode,
-)
+from users.api import PersonNode
 from transactions.api import (
     SupplyNode,
     RequestNode,
     RequestMutation,
     SupplyMutation,
 )
-from products.api import (
-    ProductNode,
-)
+from products.api import ProductNode
 
 
 class Query(ObjectType):
@@ -47,7 +41,4 @@ class Mutation(ObjectType):
     supply = SupplyMutation.Field()
 
 
-schema = Schema(
-    query=Query,
-    mutation=Mutation,
-)
+schema = Schema(query=Query, mutation=Mutation,)

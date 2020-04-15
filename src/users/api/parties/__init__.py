@@ -1,5 +1,3 @@
 """Set of party endpoints."""
 
-from .person import (
-    PersonNode,
-)
+from .person import PersonNode

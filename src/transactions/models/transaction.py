@@ -22,4 +22,4 @@ class Transaction(Model):
 
     last_modification_datetime = DateTimeField(auto_now=True)
 
-    request = OneToOneField('transactions.Request', on_delete=CASCADE)
+    request = OneToOneField("transactions.Request", on_delete=CASCADE)

@@ -1,15 +1,9 @@
 """Set of admin instantiations."""
 
-from django.contrib.admin import (
-    register,
-)
-from django.contrib.auth.admin import (
-    UserAdmin,
-)
+from django.contrib.admin import register
+from django.contrib.auth.admin import UserAdmin
 
-from ...models import (
-    Person,
-)
+from ...models import Person
 
 
 @register(Person)

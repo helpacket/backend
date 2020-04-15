@@ -1,21 +1,13 @@
 import logging
 
 from graphene import Int, ID, ClientIDMutation, Field, Boolean
-from graphql_jwt.decorators import (
-    login_required,
-)
-from graphene.relay import (
-    Node,
-)
-from graphene_django.types import (
-    DjangoObjectType,
-)
+from graphql_jwt.decorators import login_required
+from graphene.relay import Node
+from graphene_django.types import DjangoObjectType
 from graphql_relay import from_global_id
 
 from users.models import Client
-from ..models import (
-    Request,
-)
+from ..models import Request
 
 
 logger = logging.getLogger(__name__)
@@ -24,7 +16,12 @@ logger = logging.getLogger(__name__)
 class RequestNode(DjangoObjectType):
     class Meta:
         model = Request
-        fields = ("amount", "creation_datetime", "product", "status", )
+        fields = (
+            "amount",
+            "creation_datetime",
+            "product",
+            "status",
+        )
         filter_fields = ()
         interfaces = (Node,)
 

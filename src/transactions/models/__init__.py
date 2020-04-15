@@ -5,6 +5,4 @@ from .operations import (
     Request,
     Supply,
 )
-from .transaction import (
-    Transaction,
-)
+from .transaction import Transaction

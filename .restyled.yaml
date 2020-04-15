@@ -1,10 +1,12 @@
 ---
-image: restyled/restyler-black:v19.10b0
-command:
-- black
-arguments:
-  - --line-length 120
-include:
-- "**/*.py"
-interpreters:
-- python
+restylers:
+  - name: black
+    image: restyled/restyler-black:v19.10b0
+    command:
+      - black
+    arguments:
+      - --line-length 120
+    include:
+      - "**/*.py"
+    interpreters:
+      - python

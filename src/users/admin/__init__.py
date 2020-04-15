@@ -1,6 +1,4 @@
-from .parties import (
-    PersonAdmin,
-)
+from .parties import PersonAdmin
 from .roles import (
     ClientAdmin,
     SupplierAdmin,

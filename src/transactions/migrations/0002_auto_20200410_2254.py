@@ -9,30 +9,42 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('transactions', '0001_initial'),
-        ('users', '0001_initial'),
-        ('products', '0001_initial'),
+        ("transactions", "0001_initial"),
+        ("users", "0001_initial"),
+        ("products", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='supply',
-            name='supplier',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='supplies', to='users.Supplier'),
+            model_name="supply",
+            name="supplier",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, related_name="supplies", to="users.Supplier",
+            ),
         ),
         migrations.AddField(
-            model_name='supply',
-            name='transaction',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='supplies', to='transactions.Transaction'),
+            model_name="supply",
+            name="transaction",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                related_name="supplies",
+                to="transactions.Transaction",
+            ),
         ),
         migrations.AddField(
-            model_name='request',
-            name='product',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='requests', to='products.Product'),
+            model_name="request",
+            name="product",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, related_name="requests", to="products.Product",
+            ),
         ),
         migrations.AddField(
-            model_name='request',
-            name='requester',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='requests', to='users.Client'),
+            model_name="request",
+            name="requester",
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE, related_name="requests", to="users.Client",
+            ),
         ),
     ]

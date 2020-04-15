@@ -3,7 +3,8 @@
 import logging
 
 from django.db.models import (
-    Model, AutoField,
+    Model,
+    AutoField,
 )
 
 logger = logging.getLogger(__name__)

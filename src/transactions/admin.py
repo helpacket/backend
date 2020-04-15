@@ -6,12 +6,12 @@ from .models import Transaction
 
 @admin.register(Request)
 class RequestAdmin(admin.ModelAdmin):
-    list_display = ('id', 'creation_datetime', 'product', 'amount')
+    list_display = ("id", "creation_datetime", "product", "amount")
 
 
 @admin.register(Supply)
 class SupplyAdmin(admin.ModelAdmin):
-    list_display = ('id', 'creation_datetime', 'product', 'amount')
+    list_display = ("id", "creation_datetime", "product", "amount")
 
     class Meta:
         verbose_name_plural = "Supplies"
@@ -19,4 +19,7 @@ class SupplyAdmin(admin.ModelAdmin):
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'creation_datetime', )
+    list_display = (
+        "id",
+        "creation_datetime",
+    )

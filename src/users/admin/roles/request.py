@@ -3,11 +3,9 @@ from django.contrib.admin import (
     ModelAdmin,
 )
 
-from ...models import (
-    Client,
-)
+from ...models import Client
 
 
 @register(Client)
 class ClientAdmin(ModelAdmin):
-    list_display = ('party',)
+    list_display = ("party",)

@@ -7,14 +7,13 @@ from django.db.models import (
     CASCADE,
 )
 
-from .abc import (
-    Role,
-)
+from .abc import Role
 
 logger = logging.getLogger(__name__)
 
 
 # TODO: Rename to Supplier
+
 
 class Supplier(Role):
     """Supplier model."""

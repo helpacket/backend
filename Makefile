@@ -18,6 +18,9 @@ container-shell:
 shell:
 	docker exec -it dg01 bash
 
+syntax:
+	docker exec dg01 bash -c "flake8"
+
 test:
 	docker exec dg01 bash -c "pytest --cov=. --cov-report xml --cov-report term"
 

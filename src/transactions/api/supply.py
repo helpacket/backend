@@ -1,22 +1,14 @@
 import logging
 
 from graphene import ClientIDMutation, ID, Int, Field, Boolean
-from graphql_jwt.decorators import (
-    login_required,
-)
-from graphene.relay import (
-    Node,
-)
+from graphql_jwt.decorators import login_required
+from graphene.relay import Node
 
-from graphene_django.types import (
-    DjangoObjectType,
-)
+from graphene_django.types import DjangoObjectType
 from graphql_relay import from_global_id
 
 from users.models import Supplier
-from ..models import (
-    Supply,
-)
+from ..models import Supply
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +16,12 @@ logger = logging.getLogger(__name__)
 class SupplyNode(DjangoObjectType):
     class Meta:
         model = Supply
-        fields = ("amount", "creation_datetime", "product", "status",)
+        fields = (
+            "amount",
+            "creation_datetime",
+            "product",
+            "status",
+        )
         filter_fields = ()
         interfaces = (Node,)
 

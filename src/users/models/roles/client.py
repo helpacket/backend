@@ -7,14 +7,13 @@ from django.db.models import (
     CASCADE,
 )
 
-from .abc import (
-    Role,
-)
+from .abc import Role
 
 logger = logging.getLogger(__name__)
 
 
 # TODO: Rename to Client
+
 
 class Client(Role):
     """Client model."""

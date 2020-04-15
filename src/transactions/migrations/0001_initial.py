@@ -9,44 +9,48 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('products', '0001_initial'),
+        ("products", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Request',
+            name="Request",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('creation_datetime', models.DateTimeField(auto_now_add=True)),
-                ('last_modification_datetime', models.DateTimeField(auto_now=True)),
-                ('amount', models.IntegerField()),
-                ('status', models.IntegerField(choices=[(0, 'pending'), (1, 'assigned'), (2, 'sent')], default=0)),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("creation_datetime", models.DateTimeField(auto_now_add=True)),
+                ("last_modification_datetime", models.DateTimeField(auto_now=True)),
+                ("amount", models.IntegerField()),
+                ("status", models.IntegerField(choices=[(0, "pending"), (1, "assigned"), (2, "sent")], default=0,),),
             ],
-            options={
-                'abstract': False,
-            },
+            options={"abstract": False},
         ),
         migrations.CreateModel(
-            name='Transaction',
+            name="Transaction",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('creation_datetime', models.DateTimeField(auto_now_add=True)),
-                ('last_modification_datetime', models.DateTimeField(auto_now=True)),
-                ('request', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='transactions.Request')),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("creation_datetime", models.DateTimeField(auto_now_add=True)),
+                ("last_modification_datetime", models.DateTimeField(auto_now=True)),
+                (
+                    "request",
+                    models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to="transactions.Request",),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Supply',
+            name="Supply",
             fields=[
-                ('id', models.AutoField(primary_key=True, serialize=False)),
-                ('creation_datetime', models.DateTimeField(auto_now_add=True)),
-                ('last_modification_datetime', models.DateTimeField(auto_now=True)),
-                ('amount', models.IntegerField()),
-                ('status', models.IntegerField(choices=[(0, 'pending'), (1, 'assigned'), (2, 'sent')], default=0)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='supplies', to='products.Product')),
+                ("id", models.AutoField(primary_key=True, serialize=False)),
+                ("creation_datetime", models.DateTimeField(auto_now_add=True)),
+                ("last_modification_datetime", models.DateTimeField(auto_now=True)),
+                ("amount", models.IntegerField()),
+                ("status", models.IntegerField(choices=[(0, "pending"), (1, "assigned"), (2, "sent")], default=0,),),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, related_name="supplies", to="products.Product",
+                    ),
+                ),
             ],
-            options={
-                'abstract': False,
-            },
+            options={"abstract": False},
         ),
     ]

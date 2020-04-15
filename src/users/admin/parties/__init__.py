@@ -1,3 +1,1 @@
-from .person import (
-    PersonAdmin,
-)
+from .person import PersonAdmin

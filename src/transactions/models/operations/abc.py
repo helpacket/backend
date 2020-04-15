@@ -9,9 +9,7 @@ from django.db.models import (
     IntegerField,
 )
 
-from products.models import (
-    Product,  # TODO: Locate under "TYPE_CHECKING".
-)
+from products.models import Product  # TODO: Locate under "TYPE_CHECKING".
 
 
 class Operation(Model):
@@ -24,9 +22,9 @@ class Operation(Model):
     ASSIGNED = 1
     SENT = 2
     STATUS_CHOICES = (
-        (PENDING, 'pending'),
-        (ASSIGNED, 'assigned'),
-        (SENT, 'sent'),
+        (PENDING, "pending"),
+        (ASSIGNED, "assigned"),
+        (SENT, "sent"),
     )
 
     id = AutoField(primary_key=True)

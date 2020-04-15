@@ -3,11 +3,9 @@ from django.contrib.admin import (
     ModelAdmin,
 )
 
-from ...models import (
-    Supplier,
-)
+from ...models import Supplier
 
 
 @register(Supplier)
 class SupplierAdmin(ModelAdmin):
-    list_display = ('party',)
+    list_display = ("party",)

@@ -2,22 +2,12 @@
 
 import logging
 
-from graphene import (
-    Boolean,
-)
-from graphql_jwt.decorators import (
-    login_required,
-)
-from graphene.relay import (
-    Node,
-)
-from graphene_django.types import (
-    DjangoObjectType,
-)
+from graphene import Boolean
+from graphql_jwt.decorators import login_required
+from graphene.relay import Node
+from graphene_django.types import DjangoObjectType
 
-from ...models import (
-    Person,
-)
+from ...models import Person
 
 logger = logging.getLogger(__name__)
 
@@ -30,9 +20,13 @@ class PersonNode(DjangoObjectType):
 
     class Meta:
         """Meta class."""
+
         model = Person
         fields = ("username", "email", "first_name", "last_name")
-        filter_fields = ('username', 'email',)
+        filter_fields = (
+            "username",
+            "email",
+        )
         interfaces = (Node,)
 
     @classmethod

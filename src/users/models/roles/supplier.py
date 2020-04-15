@@ -18,6 +18,4 @@ logger = logging.getLogger(__name__)
 class Supplier(Role):
     """Supplier model."""
 
-    party = OneToOneField(
-        "users.Party", related_name="supplier", on_delete=CASCADE, primary_key=True
-    )
+    party = OneToOneField("users.Party", related_name="supplier", on_delete=CASCADE, primary_key=True)

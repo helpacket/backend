@@ -18,6 +18,4 @@ logger = logging.getLogger(__name__)
 class Client(Role):
     """Client model."""
 
-    party = OneToOneField(
-        "users.Party", related_name="client", on_delete=CASCADE, primary_key=True
-    )
+    party = OneToOneField("users.Party", related_name="client", on_delete=CASCADE, primary_key=True)

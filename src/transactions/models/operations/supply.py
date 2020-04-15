@@ -21,9 +21,5 @@ class Supply(Operation):
     product = ForeignKey("products.Product", related_name="supplies", on_delete=CASCADE)
 
     transaction = ForeignKey(
-        "transactions.Transaction",
-        related_name="supplies",
-        null=True,
-        blank=True,
-        on_delete=SET_NULL,
+        "transactions.Transaction", related_name="supplies", null=True, blank=True, on_delete=SET_NULL,
     )

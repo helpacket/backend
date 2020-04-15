@@ -19,9 +19,7 @@ class Migration(migrations.Migration):
             model_name="supply",
             name="supplier",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE,
-                related_name="supplies",
-                to="users.Supplier",
+                on_delete=django.db.models.deletion.CASCADE, related_name="supplies", to="users.Supplier",
             ),
         ),
         migrations.AddField(
@@ -39,18 +37,14 @@ class Migration(migrations.Migration):
             model_name="request",
             name="product",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE,
-                related_name="requests",
-                to="products.Product",
+                on_delete=django.db.models.deletion.CASCADE, related_name="requests", to="products.Product",
             ),
         ),
         migrations.AddField(
             model_name="request",
             name="requester",
             field=models.ForeignKey(
-                on_delete=django.db.models.deletion.CASCADE,
-                related_name="requests",
-                to="users.Client",
+                on_delete=django.db.models.deletion.CASCADE, related_name="requests", to="users.Client",
             ),
         ),
     ]

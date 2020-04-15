@@ -11,8 +11,6 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterField(
-            model_name="party",
-            name="id",
-            field=models.AutoField(primary_key=True, serialize=False),
+            model_name="party", name="id", field=models.AutoField(primary_key=True, serialize=False),
         ),
     ]

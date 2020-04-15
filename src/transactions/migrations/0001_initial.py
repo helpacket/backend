@@ -20,13 +20,7 @@ class Migration(migrations.Migration):
                 ("creation_datetime", models.DateTimeField(auto_now_add=True)),
                 ("last_modification_datetime", models.DateTimeField(auto_now=True)),
                 ("amount", models.IntegerField()),
-                (
-                    "status",
-                    models.IntegerField(
-                        choices=[(0, "pending"), (1, "assigned"), (2, "sent")],
-                        default=0,
-                    ),
-                ),
+                ("status", models.IntegerField(choices=[(0, "pending"), (1, "assigned"), (2, "sent")], default=0,),),
             ],
             options={"abstract": False,},
         ),
@@ -38,10 +32,7 @@ class Migration(migrations.Migration):
                 ("last_modification_datetime", models.DateTimeField(auto_now=True)),
                 (
                     "request",
-                    models.OneToOneField(
-                        on_delete=django.db.models.deletion.CASCADE,
-                        to="transactions.Request",
-                    ),
+                    models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to="transactions.Request",),
                 ),
             ],
         ),
@@ -52,19 +43,11 @@ class Migration(migrations.Migration):
                 ("creation_datetime", models.DateTimeField(auto_now_add=True)),
                 ("last_modification_datetime", models.DateTimeField(auto_now=True)),
                 ("amount", models.IntegerField()),
-                (
-                    "status",
-                    models.IntegerField(
-                        choices=[(0, "pending"), (1, "assigned"), (2, "sent")],
-                        default=0,
-                    ),
-                ),
+                ("status", models.IntegerField(choices=[(0, "pending"), (1, "assigned"), (2, "sent")], default=0,),),
                 (
                     "product",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE,
-                        related_name="supplies",
-                        to="products.Product",
+                        on_delete=django.db.models.deletion.CASCADE, related_name="supplies", to="products.Product",
                     ),
                 ),
             ],

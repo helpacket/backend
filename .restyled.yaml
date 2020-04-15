@@ -3,7 +3,7 @@ restylers:
   - name: black
     image: restyled/restyler-black:v19.10b0
     command:
-      - black
+      - black --line-length 120
     arguments: []
     include:
       - "**/*.py"

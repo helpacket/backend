@@ -1,5 +1,5 @@
 version = 1
 
-test_patterns = ["tests/test_*.py"]
+test_patterns = ["**/tests/test_*.py"]
 
-exclude_patterns = ["migrations/**"]
+exclude_patterns = ["**/migrations/**"]

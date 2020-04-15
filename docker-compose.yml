@@ -9,20 +9,26 @@ services:
     volumes:
       - vol_postgres:/var/lib/postgresql/data
   web:
-    build: .
+    build:
+      context: ./config/web/
     container_name: dg01
     environment:
+      - PROJECT_NAME
+      - DJANGO_SETTINGS_MODULE
       - POSTGRES_PASSWORD
+      - ENVIRONMENT
     restart: always
-    command: ./entry_point.sh
+    command: /config/entry_point.sh
     # command: tail -f /dev/null
     depends_on:
       - 'db'
     volumes:
-      - ./config/web/entry_point.sh:/src/entry_point.sh
+      - vol_static/:/static
+
+      # Development volumes
+      - ./config/web/setup.cfg:/src/setup.cfg
       - ./src:/src
       - ./fixtures:/fixtures
-      - vol_static/:/static
     expose:
       - "8000"
   nginx:
@@ -30,7 +36,7 @@ services:
     container_name: ng01
     restart: always
     ports:
-      - "8000:8000"
+      - "$PORT:8000"
     volumes:
       - ./src:/src
       - ./config/nginx:/etc/nginx/conf.d

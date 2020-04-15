@@ -1,27 +1,24 @@
 """ProductNode endpoint implementation."""
 import logging
-from graphql_jwt.decorators import (
-    login_required,
-)
-from graphene.relay import (
-    Node,
-)
-from graphene_django.types import (
-    DjangoObjectType,
-)
-from ..models import (
-    Product,
-)
+from graphql_jwt.decorators import login_required
+from graphene.relay import Node
+from graphene_django.types import DjangoObjectType
+from ..models import Product
 
 logger = logging.getLogger(__name__)
 
 
 class ProductNode(DjangoObjectType):
     """ProductNode endpoint"""
+
     class Meta:
         """Meta class."""
+
         model = Product
-        fields = ("id", "name",)
+        fields = (
+            "id",
+            "name",
+        )
         filter_fields = ()
         interfaces = (Node,)
 

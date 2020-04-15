@@ -3,8 +3,8 @@ restylers:
   - name: black
     image: restyled/restyler-black:v19.10b0
     command:
-      - black --line-length 120
-    arguments: []
+      - black
+    arguments: [--line-length 120]
     include:
       - "**/*.py"
     interpreters:

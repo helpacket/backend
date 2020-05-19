@@ -14,7 +14,7 @@ django-graphql-jwt==0.3.1
 
 # TODO delete in production
 # CORS headers
-django-cors-headers==3.2.1
+django-cors-headers==3.3.0
 
 # Tests
 pytest==5.4.1

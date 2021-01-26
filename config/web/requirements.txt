@@ -17,7 +17,7 @@ django-graphql-jwt==0.3.1
 django-cors-headers==3.2.1
 
 # Tests
-pytest==5.4.1
+pytest==6.2.2
 pytest-cov==2.8.1
 pytest-django==3.9.0
 flake8==3.7.9

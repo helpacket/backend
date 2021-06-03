@@ -4,7 +4,7 @@ gunicorn==20.0.4
 psycopg2==2.8.5
 
 # ipython:
-ipython==7.13.0
+ipython==7.24.1
 
 # GraphQL:
 graphene-django==2.6.0

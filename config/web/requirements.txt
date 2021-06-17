@@ -1,7 +1,7 @@
 # First installation things:
 Django==2.2.10
 gunicorn==20.0.4
-psycopg2==2.8.5
+psycopg2==2.9.1
 
 # ipython:
 ipython==7.13.0
